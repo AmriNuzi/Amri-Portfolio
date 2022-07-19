@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.menu-bars {
+  display: none;
+}
+
+.menu-close > .icon_bar {
+  display: none;
+}
+
+.nav {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.nav-menu {
+  position: relative;
+  background-color: #141414;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: 2s ease;
+  background-color: #141414;
+  width: 24.5%;
+}
+
+.img_nav {
+  width: 150px;
+  height: 150px;
+  margin-top: 30px;
+  border-radius: 50%;
+  border: 4px solid rgb(234, 241, 251);
+  margin-left: 16px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  line-height: 30px;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 2s ease-in-out;
+}
+
+.copyright {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.nav-text {
+  /* display: flex;
+  align-items: start;
+  list-style: none; */
+  display: flex;
+  align-items: center;
+  align-content: center;
+  list-style: none;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  justify-content: flex-start;
+  transform: translateX(83px);
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 3rem;
+  padding: 0.1rem 2rem;
+  border-radius: 4px;
+}
+
+.nav-text a:hover {
+  background-color: #1a83ff;
+}
+
+.nav-menu-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-toggle {
+  background-color: #141414;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+span {
+  margin-left: 16px;
+}
+
+@media screen and (max-width: 1300px) {
+  .nav-menu {
+    min-height: 100vh;
+    width: 100%;
+    top: 0;
+    left: -1313px;
+    transition: 2s ease-in-out;
+  }
+
+  .menu-bars {
+    font-size: 1.3rem;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    opacity: 1;
+    top: 4px;
+    right: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 3px 12px rgb(190, 190, 190);
+  }
+
+  .menu-close > .icon_bar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black;
+    font-size: 0.3rem !important;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 19px rgb(233, 233, 233);
+  }
+}
